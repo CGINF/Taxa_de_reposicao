@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     name: Atualizar infografico
-    runs-on: runs-on: ubuntu-latest
+    runs-on:  ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -27,8 +27,7 @@ jobs:
           sudo apt-get install libgit2-dev
 
       - name: Renderiza Rmd
-        run: |
-          Rscript DATASET.R
+        run: Rscript DATASET.R
 
       - name: Commit
         run: |
