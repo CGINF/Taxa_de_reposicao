@@ -7,12 +7,12 @@ name: Atualizar infografico
 on:
   schedule:
   - cron: "*/10 * * * *"
-  #workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   deploy:
     name: Atualizar infografico
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     env:
       RSPM: ${{ matrix.config.rspm }}
