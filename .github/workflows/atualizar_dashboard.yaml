@@ -7,7 +7,7 @@ name: Atualizar infografico
 on:
   schedule:
   - cron: "*/10 * * * *"
-  workflow_dispatch:
+  #workflow_dispatch:
 
 jobs:
   deploy:
