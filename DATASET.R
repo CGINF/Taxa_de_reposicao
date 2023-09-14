@@ -137,16 +137,16 @@ e2 <- data |>
 #   )
 # )
 
-data_hora <- function() {
-  paste("Data e Hora Atual: ", format(Sys.time(), "%Y-%m-%d %H:%M:%S"))
-}
+# data_hora <- function() {
+#   paste("Data e Hora Atual: ", format(Sys.time(), "%Y-%m-%d %H:%M:%S"))
+# }
 
 # Seus códigos para criar os gráficos e1 e e2
 
 # Crie um layout HTML personalizado com gráficos um abaixo do outro e a data/hora atual
 layout <- tagList(
   tags$div(
-    HTML(data_hora()),  # Adicione a função para mostrar a data e hora atual
+    #HTML(data_hora()),  # Adicione a função para mostrar a data e hora atual
     e2
   ),
   tags$div(
